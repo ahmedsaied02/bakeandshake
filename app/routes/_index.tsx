@@ -11,7 +11,7 @@ import page9 from "~/assets/9.9.jpg";
 import page10 from "~/assets/10.10.jpg";
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
+    { title: "Bake&Shake" },
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
