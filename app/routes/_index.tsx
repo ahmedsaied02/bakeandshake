@@ -19,18 +19,18 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div className="flex flex-col gap-2">
-      <img src={page1} alt="page4" />
-      <img src={page2} alt="page3" />
+      <img src={page1} alt="page1" />
+      <img src={page2} alt="page2" />
       
-      <img src={page3} alt="page1" />
-      <img src={page4} alt="page9" />
-      <img src={page5} alt="page2" />
-      <img src={page6} alt="page10" />
-      <img src={page7} alt="page5" />
-      <img src={page8} alt="page6" />
+      <img src={page3} alt="page3" />
+      <img src={page4} alt="page4" />
+      <img src={page5} alt="page5" />
+      <img src={page6} alt="page6" />
+      <img src={page7} alt="page7" />
+      <img src={page8} alt="page8" />
       
-      <img src={page9} alt="page7" />
-      <img src={page10} alt="page8" />
+      <img src={page9} alt="page9" />
+      <img src={page10} alt="page10" />
       
       
       
