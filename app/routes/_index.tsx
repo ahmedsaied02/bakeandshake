@@ -9,6 +9,7 @@ import page7 from "~/assets/7.7.jpg";
 import page8 from "~/assets/8.8.jpg";
 import page9 from "~/assets/9.9.jpg";
 import page10 from "~/assets/10.10.jpg";
+import page11 from "~/assets/11.11.jpg";
 export const meta: MetaFunction = () => {
   return [
     { title: "Bake&Shake" },
@@ -24,6 +25,7 @@ export default function Index() {
       
       <img src={page3} alt="page3" />
       <img src={page4} alt="page4" />
+      <img src={page11} alt="page11" />
       <img src={page5} alt="page5" />
       <img src={page6} alt="page6" />
       <img src={page7} alt="page7" />
