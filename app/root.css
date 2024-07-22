@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    font-family: "Calligraffitti", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+  
