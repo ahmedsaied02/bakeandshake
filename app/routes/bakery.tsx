@@ -42,37 +42,37 @@ const sandwichesPrices = ["134", "127", "127"];
 
 export default function Bakery() {
   return (
-    <div className="flex flex-col bg-primary items-center h-screen">
+    <div className="flex flex-col bg-primary items-center">
       <Header />
       <h1 className="text-2xl text-secondary">Menu</h1>
       <h2 className="text-lg text-secondary">{title}</h2>
-      <div className="bg-[#ab5b2b] rounded-md mt-8 w-[80%]">
+      
         <SectionTemplate subTitle={"Toast"} items={toast} prices={toastPrices} />
-      </div>
-      <div className="bg-[#ab5b2b] rounded-md mt-8 w-[80%]">
+      
+      
         <SectionTemplate subTitle={"Sweet Croissant"} items={sweetCroissant} prices={sweetCroissantPrices} />
-      </div>
-      <div className="bg-[#ab5b2b] rounded-md mt-8 w-[80%]">
+      
+      
         <SectionTemplate subTitle={"Croissant"} items={croissant} prices={croissantPrices} />
-      </div>
-      <div className="bg-[#ab5b2b] rounded-md mt-8 w-[80%]">
+      
+      
         <SectionTemplate subTitle={"Pate"} items={pate} prices={patePrices} />
-      </div>
-      <div className="bg-[#ab5b2b] rounded-md mt-8 w-[80%]">
+      
+      
         <SectionTemplate subTitle={"Bread"} items={bread} prices={breadPrices} />
-      </div>
-      <div className="bg-[#ab5b2b] rounded-md mt-8 w-[80%]">
+      
+      
         <SectionTemplate subTitle={"Croffle Croissant"} items={croffleCroissant} prices={croffleCroissantPrices} />
-      </div>
-      <div className="bg-[#ab5b2b] rounded-md mt-8 w-[80%]">
+      
+      
         <SectionTemplate subTitle={"Crackers"} items={crackers} prices={crackersPrices} />
-      </div>
-      <div className="bg-[#ab5b2b] rounded-md mt-8 w-[80%]">
+      
+      
         <SectionTemplate subTitle={"Desserts"} items={desserts} prices={dessertsPrices} />
-      </div>
-      <div className="bg-[#ab5b2b] rounded-md mt-8 w-[80%]">
+      
+      
         <SectionTemplate subTitle={"Sandwiches"} items={sandwiches} prices={sandwichesPrices} />
-      </div>
+      
       <Footer />
     </div>
   );
