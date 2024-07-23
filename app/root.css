@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 body {
-    font-family: "Calligraffitti", cursive;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     padding: 0;

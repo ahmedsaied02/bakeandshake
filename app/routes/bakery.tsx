@@ -8,13 +8,13 @@ const title = "Bakery";
 const toast = ["crunchy brown toast 400gm", "brown toast 30 cm", "crunchy white toast 400gm", "white toast 30cm"];
 const toastPrices = ["68", "74", "64", "74"];
 
-// Sweet croissant category
-const sweetCroissant = ["Iced Crispy Croissant", "biscoff croissant", "chocolate hazelnut", "pistachio croissant", "white chocolate croissant"];
-const sweetCroissantPrices = ["119", "98", "93", "98", "93"];
+// Sweet Croissant category
+const sweetCroissant = ["chocolate hazelnut Croissant","white chocolate Croissant", "biscoff Croissant",  "pistachio Croissant","Iced Crispy Croissant"];
+const sweetCroissantPrices = ["83","93", "98",  "98","119"];
 
 // Croissant category
-const croissant = ["plain croissant", "Brown croissant", "Mini Croissant 200gm", "cheese croissant", "mixed cheese croissant", "roast beef croissant", "smoked turkey croissant"];
-const croissantPrices = ["43", "49", "84", "47", "127", "127", "134"];
+const Croissant = ["Plain Croissant", "Brown Croissant", "Mini Croissant 200gm", "cheese Croissant", "mixed cheese Croissant", "roast beef Croissant", "smoked turkey Croissant"];
+const CroissantPrices = ["43", "49", "84", "47", "127", "127", "134"];
 
 // Pate category
 const pate = ["turkey cheese pate", "white cheese pate"];
@@ -24,7 +24,7 @@ const patePrices = ["47", "47"];
 const bread = ["2pcs petit pan 20cm", "Brown petitpan 20cm 2pcs", "Vienna white 25 cm 2pcs", "vienna brown 25cm 2 pcs"];
 const breadPrices = ["26", "33", "29", "35"];
 
-// Croffle croissant category
+// Croffle Croissant category
 const croffleCroissant = ["Biscof croffle", "Chocolate Croffle", "Mixed croffle", "Pistachio croffle", "White croffle"];
 const croffleCroissantPrices = ["125", "117", "130", "125", "117"];
 
@@ -46,32 +46,32 @@ export default function Bakery() {
       <Header />
       <h1 className="text-2xl text-secondary">Menu</h1>
       <h2 className="text-lg text-secondary">{title}</h2>
-      
-        <SectionTemplate subTitle={"Toast"} items={toast} prices={toastPrices} />
-      
-      
-        <SectionTemplate subTitle={"Sweet Croissant"} items={sweetCroissant} prices={sweetCroissantPrices} />
-      
-      
-        <SectionTemplate subTitle={"Croissant"} items={croissant} prices={croissantPrices} />
-      
-      
-        <SectionTemplate subTitle={"Pate"} items={pate} prices={patePrices} />
-      
-      
-        <SectionTemplate subTitle={"Bread"} items={bread} prices={breadPrices} />
+      <SectionTemplate subTitle={"Croissant"} items={Croissant} prices={CroissantPrices} />
+      <SectionTemplate subTitle={"Sweet Croissant"} items={sweetCroissant} prices={sweetCroissantPrices} />
+      <SectionTemplate subTitle={"Pate"} items={pate} prices={patePrices} />
+      <SectionTemplate subTitle={"Crackers"} items={crackers} prices={crackersPrices} />
+      <SectionTemplate subTitle={"Bread"} items={bread} prices={breadPrices} />
+      <SectionTemplate subTitle={"Sandwiches"} items={sandwiches} prices={sandwichesPrices} />
+      <SectionTemplate subTitle={"Croffle Croissant"} items={croffleCroissant} prices={croffleCroissantPrices} />
+      <SectionTemplate subTitle={"Desserts"} items={desserts} prices={dessertsPrices} />
+
+        {/* <SectionTemplate subTitle={"Toast"} items={toast} prices={toastPrices} /> */}
       
       
-        <SectionTemplate subTitle={"Croffle Croissant"} items={croffleCroissant} prices={croffleCroissantPrices} />
       
       
-        <SectionTemplate subTitle={"Crackers"} items={crackers} prices={crackersPrices} />
       
       
-        <SectionTemplate subTitle={"Desserts"} items={desserts} prices={dessertsPrices} />
       
       
-        <SectionTemplate subTitle={"Sandwiches"} items={sandwiches} prices={sandwichesPrices} />
+      
+      
+      
+      
+      
+      
+      
+      
       
       <Footer />
     </div>

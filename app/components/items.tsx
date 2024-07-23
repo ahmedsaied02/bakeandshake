@@ -7,13 +7,13 @@ export default function Items({
 }) {
   return (
     <>
-      <div className="flex flex-row justify-between w-[100%]">
+      <div className="flex flex-row justify-between items-center w-[100%]">
   {/* Left Column for Items */}
   <div className="flex flex-col space-y-2">
     {items.map((item, index) => (
       <p
         key={index}
-        className="whitespace-nowrap inline-block w-full text-white"
+        className="whitespace-nowrap inline-block w-full text-secondary"
       >
         {item}
       </p>
