@@ -10,7 +10,7 @@ import Footer from "~/components/footer";
 export const meta: MetaFunction = () => {
   return [
     { title: "Bake&Shake" },
-    { name: "description", content: "Welcome to Remix!" },
+    { name: "description", content: "Bake&Shake" },
   ];
 };
 
