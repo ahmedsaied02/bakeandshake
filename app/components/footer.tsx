@@ -4,7 +4,7 @@ import { faSquareFacebook, faInstagram } from '@fortawesome/free-brands-svg-icon
 export default function Footer() {
   return (
     <footer className="flex flex-col  items-center  bg-primary text-secondary text-center py-4 mt-2">
-      <div className="flex flex-row gap-2 mt-[50px] text-secondary text-xl">
+      <div className="flex flex-row gap-4 mt-[50px] text-secondary text-3xl">
         <Link to={"https://www.facebook.com/share/8zhFa7kc5hfeqYF6/?mibextid=LQQJ4d"} target="_blank"><FontAwesomeIcon icon={faSquareFacebook} /></Link>
         <Link to={"https://www.instagram.com/bakeandshake.egy?igsh=czhrYWw1dHF1aGpr"} target="_blank"><FontAwesomeIcon icon={faInstagram} /></Link>
         

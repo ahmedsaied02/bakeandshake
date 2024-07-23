@@ -16,7 +16,7 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className=" w-full flex flex-col  bg-primary items-center overflow-hidden ">
+    <div className="h-screen w-full flex flex-col  bg-primary items-center overflow-hidden ">
       <Header />
       <Link to="/cafe">
       <div className="mt-5 w-[90%] flex flex-row  m-auto align-center h-[150px] relative rounded-lg overflow-hidden">
