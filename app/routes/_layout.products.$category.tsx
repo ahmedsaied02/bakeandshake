@@ -38,7 +38,8 @@ async function fetchProducts(
   const { data, error } = await supabase
     .from("products")
     .select("*")
-    .contains("categories", [category]);
+    .contains("categories", [category])
+    .order("price", { ascending: true });
   if (error) {
     throw error;
   }
@@ -54,6 +55,7 @@ async function fetchSubcategories(
     .select("subcategories")
     .eq("category", category)
     .single()
+    
     ;
   if (error) {
     throw error;
