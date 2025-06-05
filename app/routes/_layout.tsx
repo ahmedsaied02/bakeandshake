@@ -10,11 +10,14 @@ export default function Layout() {
   return (
     <div className="min-h-svh flex flex-col bg-primary items-center">
       <header>
+	<Link to="/" className="text-secondary text-2xl font-bold">
+	  
         <img
           src={logo}
           alt="Bake and Shake"
           className="w-[70%] mt-10 mb-8 mx-auto"
         />
+	</Link>
       </header>
       <Outlet />
       <footer className="flex flex-col items-center bg-primary text-secondary text-center py-4 mt-2">
