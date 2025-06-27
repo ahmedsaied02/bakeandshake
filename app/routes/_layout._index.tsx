@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
+import { useEffect } from "react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,25 +9,27 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
+  useEffect(() => {
+    // Check if user is on mobile device
+    const isMobile = window.innerWidth < 768; // md breakpoint in Tailwind
+    
+    if (isMobile) {
+      // Automatically open PDF on mobile
+      window.open("/assets/menu.pdf", "_blank");
+    }
+  }, []);
+
   return (
     <div className="h-screen w-full">
-      {/* Mobile-friendly PDF viewer */}
+      {/* Mobile: Show loading message while PDF opens */}
       <div className="block md:hidden h-full w-full">
-        <a 
-          href="/assets/menu.pdf" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center h-full bg-gray-100 text-center p-4"
-        >
+        <div className="flex items-center justify-center h-full bg-gray-100 text-center p-4">
           <div>
             <div className="text-2xl mb-4">📋</div>
-            <div className="text-lg font-semibold mb-2">View Menu</div>
-            <div className="text-sm text-gray-600 mb-4">Tap to open PDF menu</div>
-            <div className="bg-blue-500 text-white px-6 py-3 rounded-lg inline-block">
-              Open Menu PDF
-            </div>
+            <div className="text-lg font-semibold mb-2">Opening Menu...</div>
+            <div className="text-sm text-gray-600">The menu PDF is opening in a new tab</div>
           </div>
-        </a>
+        </div>
       </div>
       
       {/* Desktop PDF viewer */}
